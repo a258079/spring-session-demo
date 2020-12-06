@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- th:if 条件成立就显示 -->
+    <h1 th:if="${flag=='yes'}">大佬牛逼!</h1>
+    <!-- th:unless 条件不成立就显示 -->
+    <h1 th:unless="${flag=='yes'}">大佬太菜了</h1>
+    <!-- switch选择语句 -->
+    <div th:switch="${admin}">
+        <p th:case="'admin'">User is admin</p>
+        <p th:case="${csl}">User is csl</p>
+    </div>
+</body>
+</html>

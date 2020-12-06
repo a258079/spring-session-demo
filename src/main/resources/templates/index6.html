@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--th:insert:保留自己的主标签，保留th:fragment的主标签。
+th:replace:不要自己的主标签，保留th:fragment的主标签。
+th:include:保留自己的主标签，不要th:fragment的主标签。（官方3.0后不推荐）
+-->
+<body>
+    <!-- 把片段的内容插入到当前位置 -->
+    <div th:insert="~{csl :: copy}"></div>
+    <!-- 使用片段的内容替换当前标签 -->
+    <div th:replace="~{csl :: copy}"></div>
+    <!-- 保留自己的主标签，不要片段的主标签 -->
+    <div th:include="~{csl :: copy}"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  redis:
+    host: 192.168.188.128
+    port: 6379
+  thymeleaf: #开始thymeleaf设置
+    cache: false #禁用模板缓存
+  session:
+    store-type: redis #seeion存储方式
+    timeout: 3600 #seeion过期时间 单位秒
+

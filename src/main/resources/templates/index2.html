@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${msg}"></h1>
+<a th:text="${user.id}"></a>
+<a th:text="${user.name}"></a>
+<a th:text="${user.age}"></a>
+<HR style="border:1 dashed #987cb9" width="80%" color=#987cb9 SIZE=1>
+<img th:src="${map.src1}" height="100px" width="100px">
+<img th:src="${map.src2}" height="100px" width="100px">
+<img th:src="${map.src3}" height="100px" width="100px">
+<HR style="border:1 dashed #987cb9" width="80%" color=#987cb9 SIZE=1>
+<img th:src="@{1.jpg}" height="100px" width="100px">
+<img th:src="@{1.jpg}" height="100px" width="100px">
+<img th:src="@{1.jpg}" height="100px" width="100px">
+</body>
+</html>
